@@ -15,7 +15,7 @@ public interface SamochodDAO {
     @Delete
     void usunAutko(Samochod samochod);
     @Update
-    void zmienParametryTokarki(Samochod samochod);
+    void zmienParametryAutka(Samochod samochod);
 
     @Query("Select * from autka")
     List<Samochod> zwrocWszystkieAutka();
