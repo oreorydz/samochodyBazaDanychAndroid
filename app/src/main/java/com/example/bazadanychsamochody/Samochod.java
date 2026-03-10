@@ -4,7 +4,7 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-@Entity(tableName = "tokareczki")
+@Entity(tableName = "autka")
 
 public class Samochod {
     @PrimaryKey(autoGenerate = true)
@@ -66,12 +66,10 @@ public class Samochod {
 
     @Override
     public String toString() {
-        return "Tokarka{" +
-                "id=" + id +
+        return "id=" + id +
                 ", marka='" + marka + '\'' +
                 ", model='" + model + '\'' +
                 ", rocznik=" + rocznik +
-                ", mocSilnika=" + mocSilnika +
-                '}';
+                ", mocSilnika=" + mocSilnika;
     }
 }
